@@ -1,4 +1,4 @@
 class Salon < ApplicationRecord
-  validates_presence_of :name, :header, :background, :street, :district, :city
+  validates_presence_of :name, :header, :street, :district, :city
   mount_uploader :background, BackgroundUploader
 end

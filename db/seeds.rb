@@ -12,3 +12,5 @@ adm.email = 'admin@salon.com'
 adm.password = '123456'
 adm.password_confirmation = '123456'
 adm.save
+
+Salon.create(name: 'teste', header: 'teste', email: 'teste', phone: 'teste', street: 'teste', district: 'teste', city: 'teste')
