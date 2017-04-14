@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @worker.name %>
+</p>
+
+<p>
+  <strong>Function:</strong>
+  <%= @worker.function %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @worker.facebook %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @worker.email %>
+</p>
+
+<p>
+  <strong>Whatsapp:</strong>
+  <%= @worker.whatsapp %>
+</p>
+
+<%= link_to 'Edit', edit_worker_path(@worker) %> |
+<%= link_to 'Back', workers_path %>

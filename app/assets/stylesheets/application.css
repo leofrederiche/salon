@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  text-align: center;
+}
+
+nav{
+  background-color: rgba(0,0,0,0.8) !important;
+  height: 6.5em;
+  padding-top: 1em;
+}
+
+nav a{
+  color: #fff !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 900;
+  transition: 0.1s;
+}
+
+nav a:hover{
+  color: #2980b9 !important;
+}
+
+.navbar-brand{
+  font-size: 2em;
+}
+
+.navbar-brand:hover{
+  font-size: 2em;
+  color: #fff !important;
+}
+
+header{
+  background-color: black;
+  position: relative;
+  left: -35px;
+  top: -35px;
+  width: calc(100% + 68px);
+  height: 90vh;
+  margin: 0;
+  color: #eee;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.header-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  z-index: 0;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+header h1{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 38vh;
+  font-size: 48px;
+  width: 60%;
+  text-shadow: 0 0 15px #000;
+}
+
+@media screen and (max-width: 992px ) {
+  header h1{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 38vh;
+    font-size: 34px;
+    width: 100%;
+    text-shadow: 0 0 15px #000;
+  }
+
+  .navbar-right{
+    background-color: rgba(0,0,0,0.7);
+  }
+
+}
+
+/* TEAM */
+
+.team{
+  position: relative;
+  top: 30px;
+  margin-bottom: 100px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: flex-start;
+  flex-flow: wrap;
+}
+
+.worker{
+  background-color: #ddd;
+  margin: 30px;
+  padding: 0;
+  position: relative;
+  display: grid;
+}
+
+.avatar{
+  width: 100%;
+}
+
+.worker-socials{
+  display: inline-table;
+}
+
+.worker-socials a:hover{
+  color: #000;
+  background: none;
+}
+
+
+/* WORKS */
+
+.works{
+  position: relative;
+  top: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: wrap;
+  margin-bottom: 100px;
+}
+
+.work{
+  background-color: #ddd;
+  margin: 5px;
+  padding: 0;
+}
+
+.work-description{
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eee;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.work-description:hover{
+  opacity: 1;
+}
+
+.social:hover{
+  color: #2980b9;
+  background: none;
+}
